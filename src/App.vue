@@ -9,7 +9,7 @@ import TheWelcome from './components/TheWelcome.vue'
 
     <div class="wrapper">
       <HelloWorld msg="Test Deploy" />
-      <h1>O gustavo vai desenvolver essa bagaça!</h1>
+      <h1>What?</h1>
     </div>
   </header>
 
