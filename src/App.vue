@@ -12,6 +12,6 @@ html.dark {
 }
 
 body {
-  @apply bg-green-100 text-indigo-900 dark:bg-indigo-900 dark:text-green-100;
+  @apply bg-green-50 text-indigo-950 dark:bg-indigo-950 dark:text-green-50;
 }
 </style>
