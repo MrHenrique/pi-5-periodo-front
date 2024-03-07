@@ -1,48 +1,17 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script setup>
+import LoginPage from './components/LoginPage.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="Test Deploy" />
-      <h1>O gustavo vai desenvolver essa bagaça!</h1>
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <LoginPage />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+html.dark {
+  color-scheme: dark;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+body {
+  @apply bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50;
 }
 </style>
