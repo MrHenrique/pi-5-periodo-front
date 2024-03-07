@@ -61,7 +61,7 @@ export default {
         <div>
           <button
             type="submit"
-            class="flex w-full justify-center rounded-md bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50 px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            class="flex w-full justify-center rounded-md dark:bg-slate-50 dark:text-slate-800 bg-slate-800 text-slate-50 px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Entrar
           </button>
