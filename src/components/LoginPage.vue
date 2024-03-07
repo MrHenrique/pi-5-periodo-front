@@ -13,7 +13,7 @@ export default {
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <img
         class="mx-auto h-10 w-auto"
-        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+        src="https://tailwindui.com/img/logos/mark.svg?color=teal&shade=900"
         alt="Your Company"
       />
       <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight">
@@ -58,7 +58,7 @@ export default {
           </div>
         </div>
 
-        <div class="mt-1">
+        <div class="mt-3">
           <button
             type="submit"
             class="flex w-full justify-center rounded-md bg-teal-900 text-teal-50 dark:bg-teal-50 dark:text-teal-900 px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
