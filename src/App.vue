@@ -12,6 +12,6 @@ html.dark {
 }
 
 body {
-  @apply bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50;
+  @apply bg-teal-50 text-teal-900 dark:bg-teal-900 dark:text-teal-50;
 }
 </style>
