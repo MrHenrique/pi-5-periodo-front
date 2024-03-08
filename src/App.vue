@@ -1,9 +1,7 @@
-<script setup>
-import LoginPage from './components/LoginPage.vue'
-</script>
+<script setup></script>
 
 <template>
-  <LoginPage />
+  <router-view />
 </template>
 
 <style>
@@ -12,6 +10,7 @@ html.dark {
 }
 
 body {
-  @apply bg-green-50 text-indigo-950 dark:bg-indigo-950 dark:text-green-50;
+  @apply bg-gray-100 text-gray-950 dark:bg-gray-950 dark:text-gray-100;
 }
 </style>
+./views/LoginPage.vue
