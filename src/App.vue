@@ -10,7 +10,6 @@ html.dark {
 }
 
 body {
-  @apply bg-gray-100 text-gray-950 dark:bg-gray-950 dark:text-gray-100;
+  @apply bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200;
 }
 </style>
-./views/LoginPage.vue
