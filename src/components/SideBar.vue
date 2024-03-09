@@ -23,6 +23,13 @@ function toggleMenu() {
             icon="fa-solid fa-arrow-right"
           />
         </div>
+        <div @click="toggleMenu">
+          <font-awesome-icon
+            v-else
+            class="rounded-t-2xl bg-gray-950 p-2"
+            icon="fa-solid fa-arrow-right"
+          />
+        </div>
         <div v-if="menuOpen" class="flex flex-col items-center">
           <font-awesome-icon
             v-if="menuOpen"
@@ -53,13 +60,7 @@ function toggleMenu() {
             <div><font-awesome-icon icon="fa-solid fa-door-closed" /></div>
           </div>
         </div>
-        <div @click="toggleMenu">
-          <font-awesome-icon
-            v-else
-            class="rounded-t-2xl bg-gray-950 p-2"
-            icon="fa-solid fa-arrow-right"
-          />
-        </div>
+        <div v-else></div>
       </div>
     </div>
   </div>
