@@ -62,6 +62,6 @@ function toggleMenu() {
             icon="fa-solid fa-arrow-right"
           />
       </div>
-    </div>
+    </div></div>
   </div>
 </template>
