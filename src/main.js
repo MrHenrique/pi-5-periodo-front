@@ -12,7 +12,7 @@ import {
   faGears,
   faDoorClosed,
   faArrowUp,
-  faArrowDown
+  faArrowDown,faArrowLeft,faArrowRight
 } from '@fortawesome/free-solid-svg-icons'
-library.add(faMoon, faSun, faGears, faDoorClosed, faArrowUp, faArrowDown)
+library.add(faMoon, faSun, faGears, faDoorClosed, faArrowUp, faArrowDown,faArrowLeft,faArrowRight)
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
