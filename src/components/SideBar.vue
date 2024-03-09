@@ -21,10 +21,7 @@ function toggleMenu() {
             v-if="!menuOpen"
             class="rounded-t-2xl bg-gray-950 p-2"
             icon="fa-solid fa-arrow-right"
-          />
-        </div>
-        <div @click="toggleMenu">
-          <font-awesome-icon
+          /><font-awesome-icon
             v-else
             class="rounded-t-2xl bg-gray-950 p-2"
             icon="fa-solid fa-arrow-right"
