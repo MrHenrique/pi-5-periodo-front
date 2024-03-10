@@ -1,16 +1,9 @@
 <script setup>
-import SideBar from '@/components/SideBar.vue'
-
-const msg = 'Éder'
+import HelloWorld from './HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <div>
-      <div>Teste</div>
-      <SideBar :msg="msg" />
-    </div>
-  </div>
+  <HelloWorld :msg="teste" />
 </template>
 
 <style scoped></style>
