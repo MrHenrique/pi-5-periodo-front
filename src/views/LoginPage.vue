@@ -8,12 +8,12 @@ export default {
 }
 </script>
 <template>
-  <div class="flex p-1 justify-end"><dark-mode /></div>
+  <div class="flex p-1 justify-end hover:text-primary"><dark-mode /></div>
   <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <img
         class="mx-auto h-10 w-auto"
-        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+        src="https://tailwindui.com/img/logos/mark.svg?color=emerald&shade=400"
         alt="Your Company"
       />
       <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight">
@@ -30,8 +30,9 @@ export default {
               id="email"
               name="email"
               type="email"
+              placeholder="Digite seu e-mail"
               autocomplete="email"
-              class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset dark:text-gray-950 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="ring-primary-alt focus:ring-primary block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -40,7 +41,9 @@ export default {
           <div class="flex items-center justify-between">
             <label for="password" class="block text-sm font-medium leading-6">Senha</label>
             <div class="text-sm">
-              <a href="#" class="font-semibold hover:text-indigo-600">Esqueceu sua senha?</a>
+              <a href="#" class="font-semibold hover:text-indigo-600 hover:text-primary"
+                >Esqueceu sua senha?</a
+              >
             </div>
           </div>
           <div class="mt-2">
@@ -48,8 +51,9 @@ export default {
               id="password"
               name="password"
               type="password"
+              placeholder="Digite sua senha"
               autocomplete="current-password"
-              class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset dark:text-gray-950 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="ring-primary-alt focus:ring-primary block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -58,7 +62,7 @@ export default {
           <button
             @click="$router.push('/home')"
             type="submit"
-            class="flex w-full justify-center rounded-md bg-indigo-600 text-gray-50 px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            class="bg-primary-alt hover:bg-primary focus-visible: outline-primary-alt flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             Entrar
           </button>
