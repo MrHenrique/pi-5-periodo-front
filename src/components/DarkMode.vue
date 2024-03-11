@@ -1,5 +1,4 @@
 <script setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { useDark, useToggle } from '@vueuse/core'
 
 const isDark = useDark({
@@ -11,17 +10,27 @@ const isDark = useDark({
     }
   }
 })
-
 const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <div>
-    <button v-if="isDark" @click="toggleDark()">
-      <font-awesome-icon icon="fa-solid fa-sun" />
-    </button>
-    <button v-else @click="toggleDark()">
-      <font-awesome-icon icon="fa-solid fa-moon" size="lg" />
-    </button>
-  </div>
+  <button class="test" v-if="isDark" @click="toggleDark()">
+    <span class="material-icons">light_mode</span>
+    <span class="text">Light</span>
+  </button>
+  <button class="test" v-else @click="toggleDark()">
+    <span class="material-icons">dark_mode</span>
+    <span class="text">Dark</span>
+  </button>
 </template>
+
+<style>
+.test {
+  display: flex;
+  align-items: center;
+}
+.material-icons {
+  font-size: 2rem;
+  transition: 0.2s ease-in-out;
+}
+</style>
