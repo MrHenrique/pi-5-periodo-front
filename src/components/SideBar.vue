@@ -1,6 +1,6 @@
 <template>
   <aside
-    :class="`${is_expanded ? 'is-expanded' : ''} bg-light text-dark dark:bg-dark-alt dark:text-light h-full`"
+    :class="`${is_expanded ? 'is-expanded' : ''} bg-light text-dark dark:bg-dark-alt dark:text-light h-full sticky h-screen top-0`"
   >
     <div class="logo">
       <img :src="logoURL" alt="Vue" />
@@ -147,7 +147,6 @@ aside {
       }
     }
   }
-
   .footer {
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
