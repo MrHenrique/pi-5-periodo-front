@@ -1,9 +1,11 @@
 <script setup>
-import HelloWorld from './HelloWorld.vue'
+import FarmCards from '@/components/FarmCards.vue'
 </script>
 
 <template>
-  <HelloWorld :msg="teste" />
+  <div class="container mx-auto">
+    <FarmCards />
+  </div>
 </template>
 
 <style scoped></style>

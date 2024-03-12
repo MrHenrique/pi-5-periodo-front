@@ -1,9 +1,9 @@
 <template>
   <aside
-    :class="`${is_expanded ? 'is-expanded' : ''} bg-dark text-light dark:bg-light dark:text-dark`"
+    :class="`${is_expanded ? 'is-expanded' : ''} bg-light text-dark dark:bg-dark-alt dark:text-light h-full`"
   >
     <div class="logo">
-      <img :src="logoURL" class="rounded-full" alt="Vue" />
+      <img :src="logoURL" alt="Vue" />
     </div>
 
     <div class="menu-toggle-wrap">
@@ -47,7 +47,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import logoURL from '../assets/logo.svg'
+import logoURL from '../assets/logoS.png'
 import DarkMode from './DarkMode.vue'
 
 const is_expanded = ref(localStorage.getItem('is_expanded') === 'true')
@@ -138,11 +138,11 @@ aside {
       }
 
       &.router-link-exact-active {
-        background-color: #334155;
+        background-color: #ddd;
         border-right: 4px solid #4ade80;
       }
       .dark &.router-link-exact-active {
-        background-color: #dddddd;
+        background-color: #1e293b;
         border-right: 4px solid #4ade80;
       }
     }
