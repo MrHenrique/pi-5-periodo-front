@@ -4,29 +4,24 @@
     <li
       v-for="(item, index) in items"
       :key="index"
-      class="li-farms bg-light text-dark dark:bg-dark-alt dark:text-light rounded-xl shadow-md overflow-hidden m-2 w-full"
+      class="li-farms bg-light text-dark dark:bg-dark-alt dark:text-light shadow-md overflow-hidden m-5 w-48"
     >
-      <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between">
-        <div class="pr-4">
-          <p class="text-4xl font-bold">{{ item.name }}</p>
+      <div class="p-4 flex flex-col items-center justify-between">
+        <div class="px-4 max-w-48">
+          <p class="text-4xl font-bold text-nowrap text-ellipsis ... overflow-hidden">
+            {{ item.name }}
+          </p>
         </div>
+        <div class="flex items-center m-1"></div>
         <div class="flex items-center m-1">
           <span class="material-icons">sensors</span><span class="ml-2">{{ item.devices }}</span>
-        </div>
-        <div class="flex items-center m-1">
           <span class="material-icons"> place </span><span class="ml-2">{{ item.talhoes }}</span>
         </div>
-        <div class="flex flex-col m-1">
-          <div class="flex items-center">
-            <span class="material-icons"> thermostat </span>
-            <div class="uppercase tracking-wide text-sm font-semibold">
-              {{ item.temperature }}°C
-            </div>
-          </div>
-          <div class="flex items-center m-1">
-            <span class="material-icons"> water_drop </span>
-            <span class="tracking-wide text-sm font-semibold">{{ item.rain }} mm</span>
-          </div>
+        <div class="flex items-center m-1">
+          <span class="material-icons"> thermostat </span>
+          <div class="uppercase tracking-wide text-sm font-semibold">{{ item.temperature }}°C</div>
+          <span class="material-icons"> water_drop </span>
+          <span class="tracking-wide text-sm font-semibold">{{ item.rain }} mm</span>
         </div>
       </div>
     </li>

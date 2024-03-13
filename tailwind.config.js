@@ -8,10 +8,12 @@ export default {
     colors: {
       primary: '#4ade80',
       'primary-alt': '#22c55e',
-      grey: '#ddd',
-      dark: '#1e293b',
-      'dark-alt': '#334155',
-      light: '#f1f5f9'
+      dark: '#212529',
+      'dark-alt': '#343a40',
+      'darker-grey': '#495057',
+      light: '#f8f9fa',
+      'light-alt': '#e9ecef',
+      grey: '#dee2e6'
     }
   },
   plugins: [formsPlugin]

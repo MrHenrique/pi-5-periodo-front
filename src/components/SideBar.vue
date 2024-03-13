@@ -1,6 +1,6 @@
 <template>
   <aside
-    :class="`${is_expanded ? 'is-expanded' : ''} bg-light text-dark dark:bg-dark-alt dark:text-light h-full sticky h-screen top-0`"
+    :class="`${is_expanded ? 'is-expanded' : ''} bg-light-alt text-dark dark:bg-dark-alt dark:text-light h-screen sticky top-0`"
   >
     <div class="logo">
       <img :src="logoURL" alt="Vue" />
@@ -12,7 +12,7 @@
       </button>
     </div>
 
-    <h3 class="text-grey">Menu</h3>
+    <h3 class="text-darker-grey dark:text-grey">Menu</h3>
     <div class="menu">
       <router-link to="/" class="button hover:text-primary">
         <span class="material-icons hover:text-primary">home</span>
@@ -138,11 +138,11 @@ aside {
       }
 
       &.router-link-exact-active {
-        background-color: #ddd;
+        background-color: #dee2e6;
         border-right: 4px solid #4ade80;
       }
       .dark &.router-link-exact-active {
-        background-color: #1e293b;
+        background-color: #495057;
         border-right: 4px solid #4ade80;
       }
     }
@@ -185,7 +185,7 @@ aside {
 
   @media (max-width: 1024px) {
     /* position: absolute; */
-    z-index: 99;
+    z-index: 100;
   }
 }
 </style>
