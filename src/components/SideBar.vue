@@ -1,9 +1,9 @@
 <template>
   <aside
-    :class="`${is_expanded ? 'is-expanded' : ''} bg-dark text-light dark:bg-light dark:text-dark`"
+    :class="`${is_expanded ? 'is-expanded' : ''} bg-light-alt text-dark dark:bg-dark-alt dark:text-light h-screen sticky top-0`"
   >
     <div class="logo">
-      <img :src="logoURL" class="rounded-full" alt="Vue" />
+      <img :src="logoURL" alt="Vue" />
     </div>
 
     <div class="menu-toggle-wrap">
@@ -12,7 +12,7 @@
       </button>
     </div>
 
-    <h3 class="text-grey">Menu</h3>
+    <h3 class="text-darker-grey dark:text-grey">Menu</h3>
     <div class="menu">
       <router-link to="/" class="button hover:text-primary">
         <span class="material-icons hover:text-primary">home</span>
@@ -47,7 +47,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import logoURL from '../assets/logo.svg'
+import logoURL from '../assets/logoS.png'
 import DarkMode from './DarkMode.vue'
 
 const is_expanded = ref(localStorage.getItem('is_expanded') === 'true')
@@ -138,16 +138,15 @@ aside {
       }
 
       &.router-link-exact-active {
-        background-color: #334155;
+        background-color: #dee2e6;
         border-right: 4px solid #4ade80;
       }
       .dark &.router-link-exact-active {
-        background-color: #dddddd;
+        background-color: #495057;
         border-right: 4px solid #4ade80;
       }
     }
   }
-
   .footer {
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
@@ -186,7 +185,7 @@ aside {
 
   @media (max-width: 1024px) {
     /* position: absolute; */
-    z-index: 99;
+    z-index: 100;
   }
 }
 </style>

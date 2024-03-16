@@ -6,8 +6,13 @@ var logged = true
 
 <template>
   <div v-if="logged" class="app">
-    <SideBar />
-    <router-view />
+    <div class="min-w-fit">
+      <SideBar />
+    </div>
+
+    <div class="container mx-auto overflow-x-hidden">
+      <router-view />
+    </div>
   </div>
   <LoginPage v-else />
 </template>
@@ -25,7 +30,7 @@ html.dark {
 }
 
 body {
-  @apply bg-light text-dark dark:bg-dark dark:text-light;
+  @apply bg-grey text-dark dark:bg-dark dark:text-light;
 }
 button {
   cursor: pointer;
