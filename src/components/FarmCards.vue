@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap justify-center p-2 sm:p-12">
+  <div class="flex flex-wrap justify-center">
     <template v-for="(item, index) in items" :key="index">
       <li
         class="li-farms bg-light text-dark dark:bg-dark-alt dark:text-light shadow-md overflow-hidden m-3 sm:m-6 w-72"
