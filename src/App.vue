@@ -32,6 +32,7 @@ html.dark {
 body {
   @apply bg-grey text-dark dark:bg-dark dark:text-light;
 }
+
 button {
   cursor: pointer;
   appearance: none;
