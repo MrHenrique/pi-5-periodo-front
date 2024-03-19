@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",
+    "leaflet": "^1.9.4",
     "vue": "^3.4.15",
     "vue-router": "^4.3.0"
   },
