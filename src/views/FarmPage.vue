@@ -25,7 +25,8 @@ export default defineComponent({
     data() {
         return {
             markers: [
-                { lat: -18.599053568654103, long: -46.55767668414138, desc: "Sensor 1", type: "Umidade" },
+                { latLng: [-18.599053568654103, -46.55767668414138], desc: "Sensor 1", type: "Umidade" },
+                { latLng: [-18.609053568651656, -46.55767698641654], desc: "Sensor 2", type: "Umidade" },
             ]
         };
     }
